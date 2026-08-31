@@ -103,8 +103,31 @@ maths2/
 - [x] `index.html` — app shell with all views
 - [x] `style.css` — full dark theme styles
 - [x] `PLAN.md` — this document
-- [ ] `progress.json` — initial empty progress file
-- [ ] `server.js` — Node.js static + API server
-- [ ] `data.js` — curriculum content with lessons, examples, quizzes
-- [ ] `app.js` — app logic, navigation, quiz engine, progress sync
-- [ ] Test & verify end-to-end
+- [x] `progress.json` — initial empty progress file
+- [x] `server.js` — Node.js static + API server (zero dependencies)
+- [x] `data.js` — 20 topics across 8 strands, each with lessons, worked examples, and quizzes
+- [x] `app.js` — app logic, navigation, quiz engine, file-based progress sync
+- [x] Test & verify end-to-end (server starts, API reads/writes progress.json, static files served)
+
+## How to Run
+
+```bash
+cd app
+node server.js
+# Open http://localhost:3000
+```
+
+## Content Coverage
+
+| # | Strand | Topics | Source |
+|---|--------|--------|--------|
+| 1 | Number & Place Value | 4 topics (6NPV-1 to 6NPV-4) | Year 6 PDF |
+| 2 | Arithmetic & Structure | 4 topics (6AS/MD-1 to 6AS/MD-4) | Year 6 PDF |
+| 3 | Fractions | 3 topics (6F-1 to 6F-3) | Year 6 PDF |
+| 4 | Geometry | 1 topic (6G-1) | Year 6 PDF |
+| 5 | KS3: Number | 2 topics (primes, negatives/BIDMAS) | Secondary PDF |
+| 6 | KS3: Algebra | 2 topics (expressions, sequences) | Secondary PDF |
+| 7 | KS3: Ratio & Proportion | 1 topic (percentages) | Secondary PDF |
+| 8 | KS3: Geometry & Measures | 2 topics (area/perimeter, angles) | Secondary PDF |
+| 9 | KS3: Probability & Statistics | 2 topics (probability, averages) | Secondary PDF |
+| **Total** | **9 strands** | **21 topics, 84 quiz questions** | |
