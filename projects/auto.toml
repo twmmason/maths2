@@ -1,0 +1,9 @@
+[project]
+name = "query-optimizer"
+
+[tools.local]
+path = "./tools"
+
+[run]
+node_timeout_s = 120
+max_optimize_iterations = 5

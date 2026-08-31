@@ -107,7 +107,33 @@ maths2/
 - [x] `server.js` — Node.js static + API server (zero dependencies)
 - [x] `data.js` — 20 topics across 8 strands, each with lessons, worked examples, and quizzes
 - [x] `app.js` — app logic, navigation, quiz engine, file-based progress sync
+- [x] `flow.js` — tutoring flow engine from experiment 012 (99.08% mastery)
+- [x] `visuals.js` — SVG generators for all quiz/learn/example visuals
 - [x] Test & verify end-to-end (server starts, API reads/writes progress.json, static files served)
+
+## Flow Engine (from `/projects/` research)
+
+The app implements the **winning tutoring flow** from experiment 012, which
+achieved **99.08% mean mastery** in BKT simulation:
+
+| Setting | Value | Why |
+|---------|-------|-----|
+| Order | Interleaved (round-robin across strands) | Prevents blocking; forces retrieval across contexts |
+| Passes | 12 spirals through curriculum | Spaced repetition builds durable mastery |
+| Review spacing | Every 2 teaches | Tight spacing counteracts forgetting |
+| Review mode | Adaptive (drill your weakest topic) | Mastery learning — closes individual gaps |
+| Scaffolding | Yes (difficulty ≥ 0.5) | Guided practice on hard topics before quizzing |
+| Feedback | Formative / worked examples | Lifts low-aptitude floor → breaks 99% barrier |
+
+### How it works in the app
+
+1. **Prerequisite gating**: Topics are locked (🔒) until all prereq topics reach ≥75% mastery
+2. **"Study Next" card**: Home screen shows the flow engine's recommendation (teach or review)
+3. **Mastery bars**: Each topic shows a 0–100% mastery bar with decay over time
+4. **Adaptive review**: After every 2 quizzes, the app recommends reviewing your weakest topic
+5. **Scaffolding**: Hard topics auto-open on the Examples tab first
+6. **BKT mastery model**: Score + prerequisite readiness + difficulty → mastery gain; all other topics decay slightly each session (stability slows decay)
+7. **Prerequisite graph**: Matches `projects/tools/curriculum.py` exactly (21 topics, directed acyclic)
 
 ## How to Run
 

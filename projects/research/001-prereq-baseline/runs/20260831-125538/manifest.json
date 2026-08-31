@@ -1,0 +1,18 @@
+{
+  "goal_hash": "435369e5914575a1",
+  "config_hash": "800ad0c085e988e3",
+  "tool_hashes": {
+    "curriculum.py": "1640f71aedf5708e",
+    "learner_model.py": "6c2b3e0ac116b675",
+    "tutor_flow.py": "b1e137a3a71eb8c0"
+  },
+  "agent_hashes": {
+    "config.py": "47984f684a5a9357",
+    "curriculum.py": "f4dfd1c28b960c01",
+    "evaluate.py": "383b7e7cf49442c8",
+    "plan.py": "538b002904953dd4",
+    "simulate.py": "e387d3c4f90a3ff4"
+  },
+  "python_version": "3.12.8",
+  "auto_adk_version": "0.6.0"
+}

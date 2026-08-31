@@ -1,0 +1,53 @@
+{
+  "run_id": "20260831-125553-3",
+  "value": 0.0,
+  "gates_passed": true,
+  "audited": false,
+  "gates": [
+    {
+      "name": "execution_completed",
+      "passed": true,
+      "detail": "All nodes ran to completion."
+    },
+    {
+      "name": "all_nodes_ran",
+      "passed": true,
+      "detail": "5 node(s) produced output."
+    },
+    {
+      "name": "result_measured",
+      "passed": true,
+      "detail": "evaluate reported a measurement."
+    },
+    {
+      "name": "metric_is_finite",
+      "passed": true,
+      "detail": "evaluate reported finite value(s)."
+    },
+    {
+      "name": "produced_output",
+      "passed": true,
+      "detail": "7 output value(s) recorded."
+    },
+    {
+      "name": "tool_use_verified",
+      "passed": true,
+      "detail": "Declared tool use matches the record."
+    }
+  ],
+  "target_metric": "mean_mastery_pct",
+  "target_value": 99.0,
+  "target_direction": "maximize",
+  "observed_value": 95.45,
+  "detector": "efficiency_reduction",
+  "template": "streamlined-adaptive-passes",
+  "parent": "010-does-adding-formative-feedback-worked",
+  "prediction": {
+    "claim": "Streamlined 8-pass adaptive flow reaches >=95.0% mean mastery",
+    "metric": "mean_mastery_pct",
+    "op": ">=",
+    "value": 95.0,
+    "refuted_if": "mean_mastery_pct < 95.0"
+  },
+  "evidence_reviewed": false
+}

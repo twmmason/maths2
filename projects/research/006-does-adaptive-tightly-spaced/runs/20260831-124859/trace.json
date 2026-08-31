@@ -1,0 +1,2648 @@
+{
+  "run_id": "20260831-124859",
+  "experiment": "006-does-adaptive-tightly-spaced",
+  "state": "passed",
+  "started_at": "2026-08-31T12:48:59+00:00",
+  "finished_at": "2026-08-31T12:48:59+00:00",
+  "duration_s": 0.149,
+  "error": "",
+  "nodes": [
+    {
+      "node_id": "config",
+      "state": "passed",
+      "started_at": "2026-08-31T12:48:59+00:00",
+      "finished_at": "2026-08-31T12:48:59+00:00",
+      "duration_s": 0.004,
+      "outputs": {
+        "settings": {
+          "order": "interleaved",
+          "passes": 10,
+          "review_spacing": 2,
+          "review_mode": "adaptive",
+          "scaffolding": true,
+          "mastery_threshold": 0.8,
+          "cohort_size": 40,
+          "seed": 2026
+        }
+      },
+      "logs": [
+        "strategy: order=interleaved passes=10 review_spacing=2 scaffolding=True"
+      ],
+      "error": "",
+      "error_code": "",
+      "traceback": "",
+      "provenance": {
+        "tool_calls": [],
+        "inputs_read": [],
+        "urls_fetched": [],
+        "files_written": []
+      },
+      "fingerprint": "03af12d8e70aecbe"
+    },
+    {
+      "node_id": "curriculum",
+      "state": "passed",
+      "started_at": "2026-08-31T12:48:59+00:00",
+      "finished_at": "2026-08-31T12:48:59+00:00",
+      "duration_s": 0.01,
+      "outputs": {
+        "curriculum": {
+          "topics": [
+            {
+              "id": "6NPV-1",
+              "title": "Powers of 10",
+              "strand": "Number & Place Value",
+              "difficulty": 0.25,
+              "prereqs": []
+            },
+            {
+              "id": "6NPV-2",
+              "title": "Compose & decompose numbers to 10 million",
+              "strand": "Number & Place Value",
+              "difficulty": 0.3,
+              "prereqs": [
+                "6NPV-1"
+              ]
+            },
+            {
+              "id": "6NPV-3",
+              "title": "Numbers up to 10 million on the number line",
+              "strand": "Number & Place Value",
+              "difficulty": 0.35,
+              "prereqs": [
+                "6NPV-2"
+              ]
+            },
+            {
+              "id": "6NPV-4",
+              "title": "Divide powers of 10 / read scales",
+              "strand": "Number & Place Value",
+              "difficulty": 0.4,
+              "prereqs": [
+                "6NPV-1",
+                "6NPV-3"
+              ]
+            },
+            {
+              "id": "6ASMD-1",
+              "title": "Additive vs multiplicative relationships",
+              "strand": "Arithmetic & Structure",
+              "difficulty": 0.4,
+              "prereqs": [
+                "6NPV-2"
+              ]
+            },
+            {
+              "id": "6ASMD-2",
+              "title": "Derive related calculations",
+              "strand": "Arithmetic & Structure",
+              "difficulty": 0.45,
+              "prereqs": [
+                "6ASMD-1"
+              ]
+            },
+            {
+              "id": "6ASMD-3",
+              "title": "Ratio relationships",
+              "strand": "Arithmetic & Structure",
+              "difficulty": 0.5,
+              "prereqs": [
+                "6ASMD-1"
+              ]
+            },
+            {
+              "id": "6ASMD-4",
+              "title": "Problems with two unknowns",
+              "strand": "Arithmetic & Structure",
+              "difficulty": 0.55,
+              "prereqs": [
+                "6ASMD-2",
+                "6ASMD-3"
+              ]
+            },
+            {
+              "id": "6F-1",
+              "title": "Simplify fractions",
+              "strand": "Fractions",
+              "difficulty": 0.4,
+              "prereqs": [
+                "6ASMD-1"
+              ]
+            },
+            {
+              "id": "6F-2",
+              "title": "Common denomination & compare",
+              "strand": "Fractions",
+              "difficulty": 0.5,
+              "prereqs": [
+                "6F-1"
+              ]
+            },
+            {
+              "id": "6F-3",
+              "title": "Compare fractions (reasoning)",
+              "strand": "Fractions",
+              "difficulty": 0.55,
+              "prereqs": [
+                "6F-2"
+              ]
+            },
+            {
+              "id": "6G-1",
+              "title": "Draw, compose & decompose shapes",
+              "strand": "Geometry",
+              "difficulty": 0.45,
+              "prereqs": [
+                "6NPV-3"
+              ]
+            },
+            {
+              "id": "KS3N-1",
+              "title": "Factors, multiples & primes",
+              "strand": "KS3 Number",
+              "difficulty": 0.5,
+              "prereqs": [
+                "6ASMD-2"
+              ]
+            },
+            {
+              "id": "KS3N-2",
+              "title": "Negatives & order of operations (BIDMAS)",
+              "strand": "KS3 Number",
+              "difficulty": 0.55,
+              "prereqs": [
+                "6ASMD-2"
+              ]
+            },
+            {
+              "id": "KS3A-1",
+              "title": "Algebraic expressions",
+              "strand": "KS3 Algebra",
+              "difficulty": 0.6,
+              "prereqs": [
+                "6ASMD-4",
+                "KS3N-2"
+              ]
+            },
+            {
+              "id": "KS3A-2",
+              "title": "Sequences",
+              "strand": "KS3 Algebra",
+              "difficulty": 0.6,
+              "prereqs": [
+                "KS3A-1"
+              ]
+            },
+            {
+              "id": "KS3R-1",
+              "title": "Percentages",
+              "strand": "KS3 Ratio & Proportion",
+              "difficulty": 0.6,
+              "prereqs": [
+                "6ASMD-3",
+                "6F-2"
+              ]
+            },
+            {
+              "id": "KS3G-1",
+              "title": "Area & perimeter",
+              "strand": "KS3 Geometry & Measures",
+              "difficulty": 0.55,
+              "prereqs": [
+                "6G-1"
+              ]
+            },
+            {
+              "id": "KS3G-2",
+              "title": "Angles",
+              "strand": "KS3 Geometry & Measures",
+              "difficulty": 0.55,
+              "prereqs": [
+                "6G-1"
+              ]
+            },
+            {
+              "id": "KS3P-1",
+              "title": "Probability",
+              "strand": "KS3 Probability & Statistics",
+              "difficulty": 0.6,
+              "prereqs": [
+                "6F-3",
+                "KS3R-1"
+              ]
+            },
+            {
+              "id": "KS3P-2",
+              "title": "Averages (mean/median/mode)",
+              "strand": "KS3 Probability & Statistics",
+              "difficulty": 0.55,
+              "prereqs": [
+                "6ASMD-2"
+              ]
+            }
+          ],
+          "strands": [
+            "Number & Place Value",
+            "Arithmetic & Structure",
+            "Fractions",
+            "Geometry",
+            "KS3 Number",
+            "KS3 Algebra",
+            "KS3 Ratio & Proportion",
+            "KS3 Geometry & Measures",
+            "KS3 Probability & Statistics"
+          ],
+          "n_topics": 21
+        }
+      },
+      "logs": [
+        "21 topics across 9 strands"
+      ],
+      "error": "",
+      "error_code": "",
+      "traceback": "",
+      "provenance": {
+        "tool_calls": [
+          {
+            "tool": "build_curriculum",
+            "ok": true,
+            "timestamp": 1788180539.714388,
+            "duration_ms": 1,
+            "result_hash": "382b740fcfedbd5e"
+          }
+        ],
+        "inputs_read": [],
+        "urls_fetched": [],
+        "files_written": []
+      },
+      "fingerprint": "164490f3f8c353d4"
+    },
+    {
+      "node_id": "plan",
+      "state": "passed",
+      "started_at": "2026-08-31T12:48:59+00:00",
+      "finished_at": "2026-08-31T12:48:59+00:00",
+      "duration_s": 0.052,
+      "outputs": {
+        "flow": {
+          "order": "interleaved",
+          "passes": 10,
+          "review_mode": "adaptive",
+          "steps": [
+            {
+              "topic": "6NPV-1",
+              "kind": "teach",
+              "difficulty": 0.25
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "teach",
+              "difficulty": 0.3
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "review",
+              "difficulty": 0.25,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6F-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "review",
+              "difficulty": 0.3,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "teach",
+              "difficulty": 0.35
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-2",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6G-1",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6F-1",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "review",
+              "difficulty": 0.35,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "review",
+              "difficulty": 0.45,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6F-3",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-3",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-2",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6G-1",
+              "kind": "review",
+              "difficulty": 0.45,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "teach",
+              "difficulty": 0.25
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "teach",
+              "difficulty": 0.3
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "teach",
+              "difficulty": 0.35
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6F-2",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6F-3",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6G-1",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-3",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-3",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "teach",
+              "difficulty": 0.25
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "teach",
+              "difficulty": 0.3
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "review",
+              "difficulty": 0.25,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6F-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "review",
+              "difficulty": 0.3,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "teach",
+              "difficulty": 0.35
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-2",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6G-1",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6F-1",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "review",
+              "difficulty": 0.35,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "review",
+              "difficulty": 0.45,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6F-3",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-3",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-2",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6G-1",
+              "kind": "review",
+              "difficulty": 0.45,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "teach",
+              "difficulty": 0.25
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "teach",
+              "difficulty": 0.3
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "teach",
+              "difficulty": 0.35
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6F-2",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6F-3",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6G-1",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-3",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-3",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "teach",
+              "difficulty": 0.25
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "teach",
+              "difficulty": 0.3
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "review",
+              "difficulty": 0.25,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6F-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "review",
+              "difficulty": 0.3,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "teach",
+              "difficulty": 0.35
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-2",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6G-1",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6F-1",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "review",
+              "difficulty": 0.35,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "review",
+              "difficulty": 0.45,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6F-3",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-3",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-2",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6G-1",
+              "kind": "review",
+              "difficulty": 0.45,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "teach",
+              "difficulty": 0.25
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "teach",
+              "difficulty": 0.3
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "teach",
+              "difficulty": 0.35
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6F-2",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6F-3",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6G-1",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-3",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-3",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "teach",
+              "difficulty": 0.25
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "teach",
+              "difficulty": 0.3
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "review",
+              "difficulty": 0.25,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6F-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "review",
+              "difficulty": 0.3,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "teach",
+              "difficulty": 0.35
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-2",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6G-1",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6F-1",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "review",
+              "difficulty": 0.35,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "review",
+              "difficulty": 0.45,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6F-3",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-3",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-2",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6G-1",
+              "kind": "review",
+              "difficulty": 0.45,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "teach",
+              "difficulty": 0.25
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "teach",
+              "difficulty": 0.3
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "teach",
+              "difficulty": 0.35
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6F-2",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6F-3",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6G-1",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-3",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-3",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "teach",
+              "difficulty": 0.25
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "teach",
+              "difficulty": 0.3
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "review",
+              "difficulty": 0.25,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6F-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "review",
+              "difficulty": 0.3,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "teach",
+              "difficulty": 0.35
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-2",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6G-1",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6F-1",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "review",
+              "difficulty": 0.35,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "review",
+              "difficulty": 0.45,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6F-3",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-3",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-2",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6G-1",
+              "kind": "review",
+              "difficulty": 0.45,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "6NPV-1",
+              "kind": "teach",
+              "difficulty": 0.25
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-2",
+              "kind": "teach",
+              "difficulty": 0.3
+            },
+            {
+              "topic": "6ASMD-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "review",
+              "difficulty": 0.4,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-1",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6NPV-3",
+              "kind": "teach",
+              "difficulty": 0.35
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "review",
+              "difficulty": 0.5,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-2",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "6F-2",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "6F-3",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6G-1",
+              "kind": "teach",
+              "difficulty": 0.45
+            },
+            {
+              "topic": "KS3N-1",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-1",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "6NPV-4",
+              "kind": "teach",
+              "difficulty": 0.4
+            },
+            {
+              "topic": "6ASMD-3",
+              "kind": "teach",
+              "difficulty": 0.5
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6F-3",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6F-3",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3N-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "review",
+              "difficulty": 0.55,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3G-2",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3R-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "teach",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "6ASMD-4",
+              "kind": "scaffold",
+              "difficulty": 0.55
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3P-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-1",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "teach",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "scaffold",
+              "difficulty": 0.6
+            },
+            {
+              "topic": "KS3A-2",
+              "kind": "review",
+              "difficulty": 0.6,
+              "adaptive": true
+            }
+          ],
+          "n_teach": 210,
+          "n_review": 105,
+          "n_steps": 415
+        }
+      },
+      "logs": [
+        "planned 415 steps (210 teach, 105 review)"
+      ],
+      "error": "",
+      "error_code": "",
+      "traceback": "",
+      "provenance": {
+        "tool_calls": [
+          {
+            "tool": "plan_lessons",
+            "ok": true,
+            "timestamp": 1788180539.723746,
+            "duration_ms": 0,
+            "result_hash": "277d610401ae8048"
+          }
+        ],
+        "inputs_read": [
+          {
+            "port": "settings",
+            "found": true
+          },
+          {
+            "port": "curriculum",
+            "found": true
+          }
+        ],
+        "urls_fetched": [],
+        "files_written": []
+      },
+      "fingerprint": "b7567e4c9e90a151"
+    },
+    {
+      "node_id": "simulate",
+      "state": "passed",
+      "started_at": "2026-08-31T12:48:59+00:00",
+      "finished_at": "2026-08-31T12:48:59+00:00",
+      "duration_s": 0.057,
+      "outputs": {
+        "result": {
+          "mean_mastery_pct": 97.45,
+          "mastered_topic_pct": 97.62,
+          "per_topic_mastery": {
+            "6NPV-1": 0.975,
+            "6NPV-2": 0.971,
+            "6NPV-3": 0.971,
+            "6NPV-4": 0.974,
+            "6ASMD-1": 0.97,
+            "6ASMD-2": 0.969,
+            "6ASMD-3": 0.972,
+            "6ASMD-4": 0.979,
+            "6F-1": 0.969,
+            "6F-2": 0.968,
+            "6F-3": 0.978,
+            "6G-1": 0.97,
+            "KS3N-1": 0.97,
+            "KS3N-2": 0.978,
+            "KS3A-1": 0.981,
+            "KS3A-2": 0.981,
+            "KS3R-1": 0.979,
+            "KS3G-1": 0.975,
+            "KS3G-2": 0.979,
+            "KS3P-1": 0.981,
+            "KS3P-2": 0.975
+          },
+          "cohort_size": 40,
+          "n_steps": 415
+        }
+      },
+      "logs": [
+        "mean mastery 97.5% (97.6% of topics mastered)"
+      ],
+      "error": "",
+      "error_code": "",
+      "traceback": "",
+      "provenance": {
+        "tool_calls": [
+          {
+            "tool": "simulate_cohort",
+            "ok": true,
+            "timestamp": 1788180539.830487,
+            "duration_ms": 52,
+            "result_hash": "4e279e13c418f325"
+          }
+        ],
+        "inputs_read": [
+          {
+            "port": "settings",
+            "found": true
+          },
+          {
+            "port": "curriculum",
+            "found": true
+          },
+          {
+            "port": "flow",
+            "found": true
+          }
+        ],
+        "urls_fetched": [],
+        "files_written": []
+      },
+      "fingerprint": "078e253e06f1de28"
+    },
+    {
+      "node_id": "evaluate",
+      "state": "passed",
+      "started_at": "2026-08-31T12:48:59+00:00",
+      "finished_at": "2026-08-31T12:48:59+00:00",
+      "duration_s": 0.004,
+      "outputs": {
+        "metric": "mean_mastery_pct",
+        "value": 97.45,
+        "detail": {
+          "order": "interleaved",
+          "passes": 10,
+          "review_spacing": 2,
+          "review_mode": "adaptive",
+          "scaffolding": true,
+          "mastered_topic_pct": 97.62,
+          "n_steps": 415,
+          "per_topic_mastery": {
+            "6NPV-1": 0.975,
+            "6NPV-2": 0.971,
+            "6NPV-3": 0.971,
+            "6NPV-4": 0.974,
+            "6ASMD-1": 0.97,
+            "6ASMD-2": 0.969,
+            "6ASMD-3": 0.972,
+            "6ASMD-4": 0.979,
+            "6F-1": 0.969,
+            "6F-2": 0.968,
+            "6F-3": 0.978,
+            "6G-1": 0.97,
+            "KS3N-1": 0.97,
+            "KS3N-2": 0.978,
+            "KS3A-1": 0.981,
+            "KS3A-2": 0.981,
+            "KS3R-1": 0.979,
+            "KS3G-1": 0.975,
+            "KS3G-2": 0.979,
+            "KS3P-1": 0.981,
+            "KS3P-2": 0.975
+          },
+          "higher_is_better": true
+        }
+      },
+      "logs": [
+        "mean_mastery_pct=97.45 over 40 learners across 415 lesson steps"
+      ],
+      "error": "",
+      "error_code": "",
+      "traceback": "",
+      "provenance": {
+        "tool_calls": [],
+        "inputs_read": [
+          {
+            "port": "settings",
+            "found": true
+          },
+          {
+            "port": "result",
+            "found": true
+          }
+        ],
+        "urls_fetched": [],
+        "files_written": []
+      },
+      "fingerprint": "4b109dbad0f71b8b"
+    }
+  ]
+}

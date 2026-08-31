@@ -1,0 +1,53 @@
+{
+  "run_id": "20260831-124144-3",
+  "value": 0.0,
+  "gates_passed": true,
+  "audited": false,
+  "gates": [
+    {
+      "name": "execution_completed",
+      "passed": true,
+      "detail": "All nodes ran to completion."
+    },
+    {
+      "name": "all_nodes_ran",
+      "passed": true,
+      "detail": "5 node(s) produced output."
+    },
+    {
+      "name": "result_measured",
+      "passed": true,
+      "detail": "evaluate reported a measurement."
+    },
+    {
+      "name": "metric_is_finite",
+      "passed": true,
+      "detail": "evaluate reported finite value(s)."
+    },
+    {
+      "name": "produced_output",
+      "passed": true,
+      "detail": "7 output value(s) recorded."
+    },
+    {
+      "name": "tool_use_verified",
+      "passed": true,
+      "detail": "Declared tool use matches the record."
+    }
+  ],
+  "target_metric": "mean_mastery_pct",
+  "target_value": 80.0,
+  "target_direction": "maximize",
+  "observed_value": 79.99,
+  "detector": "add_spiral_passes",
+  "template": "more-spiral-passes",
+  "parent": "002-does-an-interleaved-flow-with-spaced",
+  "prediction": {
+    "claim": "Interleaved flow with review and scaffolding over 6 spiral passes reaches >=80% mean mastery",
+    "metric": "mean_mastery_pct",
+    "op": ">=",
+    "value": 80.0,
+    "refuted_if": "mean_mastery_pct < 80.0"
+  },
+  "evidence_reviewed": false
+}

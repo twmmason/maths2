@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# OS
+.DS_Store
+
+# ── What to commit ───────────────────────────────────────────────────────────
+# Commit everything under research/: hypotheses, workflows, agent code, traces,
+# scores and reports. That history *is* the research record — it is how anyone
+# (including you, later) can see what was tried, what it produced, and why the
+# conclusions changed.
+#
+# Large binary outputs are the one judgement call. If a run writes datasets too
+# big for git, ignore them and keep the trace, which records their shape,
+# columns and size. Uncomment to do that:
+#
+# research/**/runs/*/data/*.parquet
+# research/**/runs/*/data/*.npy

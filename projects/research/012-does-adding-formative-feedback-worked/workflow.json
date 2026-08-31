@@ -1,0 +1,186 @@
+{
+  "name": "Prerequisite-ordered baseline tutoring flow",
+  "description": "Build the curriculum graph, plan a prerequisite-ordered single-pass flow, simulate a learner cohort, and measure mean mastery.",
+  "nodes": [
+    {
+      "id": "config",
+      "kind": "config",
+      "ports": {
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "settings",
+            "type": "json"
+          }
+        ]
+      },
+      "params": {
+        "order": "interleaved",
+        "passes": 12,
+        "review_spacing": 2,
+        "scaffolding": true,
+        "mastery_threshold": 0.8,
+        "cohort_size": 40,
+        "seed": 2026,
+        "review_mode": "adaptive",
+        "feedback": true
+      }
+    },
+    {
+      "id": "curriculum",
+      "kind": "data",
+      "ports": {
+        "inputs": [
+          {
+            "name": "settings",
+            "type": "json"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "curriculum",
+            "type": "json"
+          }
+        ]
+      },
+      "tools": [
+        "build_curriculum"
+      ]
+    },
+    {
+      "id": "plan",
+      "kind": "algorithm",
+      "ports": {
+        "inputs": [
+          {
+            "name": "settings",
+            "type": "json"
+          },
+          {
+            "name": "curriculum",
+            "type": "json"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "flow",
+            "type": "json"
+          }
+        ]
+      },
+      "tools": [
+        "plan_lessons"
+      ]
+    },
+    {
+      "id": "simulate",
+      "kind": "algorithm",
+      "ports": {
+        "inputs": [
+          {
+            "name": "settings",
+            "type": "json"
+          },
+          {
+            "name": "curriculum",
+            "type": "json"
+          },
+          {
+            "name": "flow",
+            "type": "json"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "result",
+            "type": "json"
+          }
+        ]
+      },
+      "tools": [
+        "simulate_cohort"
+      ]
+    },
+    {
+      "id": "evaluate",
+      "kind": "evaluation",
+      "ports": {
+        "inputs": [
+          {
+            "name": "settings",
+            "type": "json"
+          },
+          {
+            "name": "result",
+            "type": "json"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "metric",
+            "type": "str"
+          },
+          {
+            "name": "value",
+            "type": "float"
+          },
+          {
+            "name": "detail",
+            "type": "json",
+            "required": false
+          }
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "config",
+      "source_port": "settings",
+      "target": "curriculum",
+      "target_port": "settings"
+    },
+    {
+      "source": "config",
+      "source_port": "settings",
+      "target": "plan",
+      "target_port": "settings"
+    },
+    {
+      "source": "config",
+      "source_port": "settings",
+      "target": "simulate",
+      "target_port": "settings"
+    },
+    {
+      "source": "config",
+      "source_port": "settings",
+      "target": "evaluate",
+      "target_port": "settings"
+    },
+    {
+      "source": "curriculum",
+      "source_port": "curriculum",
+      "target": "plan",
+      "target_port": "curriculum"
+    },
+    {
+      "source": "curriculum",
+      "source_port": "curriculum",
+      "target": "simulate",
+      "target_port": "curriculum"
+    },
+    {
+      "source": "plan",
+      "source_port": "flow",
+      "target": "simulate",
+      "target_port": "flow"
+    },
+    {
+      "source": "simulate",
+      "source_port": "result",
+      "target": "evaluate",
+      "target_port": "result"
+    }
+  ]
+}

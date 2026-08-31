@@ -1,7 +1,125 @@
 {
-  "xp": 0,
-  "streak": 0,
-  "lastDate": null,
+  "xp": 40,
+  "streak": 1,
+  "lastDate": "2026-08-31",
   "completed": {},
-  "scores": {}
+  "scores": {
+    "6npv1": {
+      "score": 4,
+      "total": 4,
+      "date": "2026-08-31T13:04:05.253Z"
+    }
+  },
+  "mastery": {
+    "6npv1": {
+      "level": 0.410625,
+      "stability": 1.15,
+      "touches": 1
+    },
+    "6npv2": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "6npv3": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "6npv4": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "6asmd1": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "6asmd2": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "6asmd3": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "6asmd4": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "6f1": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "6f2": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "6f3": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "6g1": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "ks3n1": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "ks3n2": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "ks3a1": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "ks3a2": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "ks3r1": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "ks3g1": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "ks3g2": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "ks3p1": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    },
+    "ks3s1": {
+      "level": 0,
+      "stability": 1,
+      "touches": 0
+    }
+  },
+  "teachCount": 1,
+  "reviewCursor": 0,
+  "taughtOrder": [
+    "6npv1"
+  ]
 }

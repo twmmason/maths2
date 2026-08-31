@@ -1,0 +1,42 @@
+{
+  "run_id": "20260831-124738",
+  "value": 0.0,
+  "gates_passed": false,
+  "audited": false,
+  "gates": [
+    {
+      "name": "execution_completed",
+      "passed": false,
+      "detail": "Run state is 'failed'; failed node(s): plan."
+    },
+    {
+      "name": "all_nodes_ran",
+      "passed": false,
+      "detail": "Node(s) never produced output: evaluate, plan, simulate."
+    },
+    {
+      "name": "result_measured",
+      "passed": false,
+      "detail": "No evaluation node produced a value (checked: evaluate)."
+    },
+    {
+      "name": "metric_is_finite",
+      "passed": false,
+      "detail": "No metric was reported."
+    },
+    {
+      "name": "produced_output",
+      "passed": true,
+      "detail": "2 output value(s) recorded."
+    },
+    {
+      "name": "tool_use_verified",
+      "passed": true,
+      "detail": "Declared tool use matches the record."
+    }
+  ],
+  "target_metric": "mean_mastery_pct",
+  "target_value": 95.0,
+  "target_direction": "maximize",
+  "evidence_reviewed": false
+}

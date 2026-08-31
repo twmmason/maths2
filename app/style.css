@@ -110,6 +110,102 @@ header { position: sticky; top: 0; z-index: 100; display: flex; align-items: cen
 #quiz-score { font-size: 48px; font-weight: 700; margin-bottom: 8px; }
 #quiz-result .score-label { font-size: 14px; color: var(--text-dim); margin-bottom: 24px; }
 
+.quiz-visual, .example-card .quiz-visual, #lesson-content .quiz-visual { margin-bottom: 14px; display: flex; justify-content: center; }
+.quiz-visual svg.viz, .example-card svg.viz, #lesson-content svg.viz { width: 100%; max-width: 420px; height: auto; }
+#lesson-content .quiz-visual { margin-bottom: 20px; }
+.example-card .quiz-visual { margin-bottom: 12px; }
+
+/* Profile screen */
+.profile-screen { text-align: center; padding: 60px 0 40px; max-width: 380px; margin: 0 auto; }
+.profile-logo { font-size: 48px; margin-bottom: 12px; }
+.profile-title { font-size: 28px; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 4px; }
+.profile-sub { font-size: 14px; color: var(--text-dim); margin-bottom: 40px; }
+.profile-section { margin-bottom: 24px; }
+.profile-label { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--text-dim); margin-bottom: 12px; font-weight: 600; }
+.profile-input { width: 100%; padding: 14px 16px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text); font-size: 16px; outline: none; margin-bottom: 12px; transition: border-color .15s; }
+.profile-input:focus { border-color: var(--accent); }
+.profile-input::placeholder { color: var(--text-dim); }
+.profile-card { display: flex; align-items: center; gap: 14px; padding: 14px 18px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); cursor: pointer; margin-bottom: 8px; transition: background .15s, border-color .15s; }
+.profile-card:hover { background: var(--bg-hover); border-color: var(--accent); }
+.profile-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--accent-soft); display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: var(--accent); flex-shrink: 0; }
+.profile-card-info { flex: 1; text-align: left; }
+.profile-card-name { font-size: 15px; font-weight: 600; }
+.profile-card-meta { font-size: 12px; color: var(--text-dim); }
+.profile-divider { display: flex; align-items: center; gap: 16px; margin: 24px 0; color: var(--text-dim); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+.profile-divider::before, .profile-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.header-profile { cursor: pointer; font-size: 13px; color: var(--text-dim); padding: 4px 10px; border: 1px solid var(--border); border-radius: var(--radius-sm); transition: all .15s; }
+.header-profile:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Study Next card */
+.study-next { margin-bottom: 24px; }
+.study-next-card { padding: 20px; background: var(--accent-soft); border: 1px solid var(--accent); border-radius: var(--radius); cursor: pointer; transition: transform .15s, box-shadow .15s; }
+.study-next-card:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(99,102,241,0.2); }
+.study-next-label { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); margin-bottom: 6px; font-weight: 600; }
+.study-next-title { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+.study-next-reason { font-size: 13px; color: var(--text-dim); margin-bottom: 12px; }
+.study-next-btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 18px; background: var(--accent); color: #fff; border: none; border-radius: var(--radius-sm); font-size: 13px; font-weight: 600; cursor: pointer; }
+.study-next-complete { padding: 20px; background: var(--green-soft); border: 1px solid var(--green); border-radius: var(--radius); text-align: center; }
+.study-next-complete .emoji { font-size: 32px; margin-bottom: 8px; }
+.study-next-complete p { color: var(--green); font-weight: 600; }
+
+/* Mastery bar (topic cards) */
+.mastery-bar { height: 4px; background: var(--border); border-radius: 2px; margin-top: 6px; overflow: hidden; }
+.mastery-bar-fill { height: 100%; border-radius: 2px; transition: width .4s ease; }
+.mastery-bar-fill.low { background: var(--red); }
+.mastery-bar-fill.mid { background: var(--orange); }
+.mastery-bar-fill.high { background: var(--green); }
+
+/* Locked topic */
+.topic-card.locked { opacity: 0.45; cursor: not-allowed; }
+.topic-card.locked:hover { background: var(--bg-card); border-color: var(--border); }
+.lock-reason { font-size: 11px; color: var(--red); margin-top: 4px; }
+
+/* Mastery panel (shown above quiz) */
+.mastery-panel { padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 20px; display: flex; align-items: center; gap: 16px; }
+.mastery-ring { width: 56px; height: 56px; position: relative; flex-shrink: 0; }
+.mastery-ring svg { width: 56px; height: 56px; transform: rotate(-90deg); }
+.mastery-ring .track { stroke: var(--border); }
+.mastery-ring .fill { transition: stroke-dashoffset .6s ease; }
+.mastery-ring .fill.low { stroke: var(--red); }
+.mastery-ring .fill.mid { stroke: var(--orange); }
+.mastery-ring .fill.high { stroke: var(--green); }
+.mastery-ring .fill.strong { stroke: #6366f1; }
+.mastery-ring-pct { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; }
+.mastery-info { flex: 1; }
+.mastery-info-level { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+.mastery-info-msg { font-size: 13px; color: var(--text-dim); line-height: 1.4; }
+.mastery-info-sessions { font-size: 12px; color: var(--accent); font-weight: 600; margin-top: 4px; }
+
+/* Post-quiz mastery update */
+.mastery-update { margin-top: 12px; margin-bottom: 16px; padding: 14px 18px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); }
+.mastery-update-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.mastery-update-label { font-size: 12px; color: var(--text-dim); width: 50px; flex-shrink: 0; }
+.mastery-update-bar { flex: 1; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.mastery-update-bar-fill { height: 100%; border-radius: 3px; transition: width .6s ease; }
+.mastery-update-val { font-size: 13px; font-weight: 600; width: 40px; text-align: right; flex-shrink: 0; }
+.mastery-update-msg { font-size: 13px; color: var(--text-dim); margin-top: 8px; text-align: center; }
+
+/* Scaffold banner */
+.scaffold-banner { padding: 12px 16px; background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3); border-radius: var(--radius-sm); margin-bottom: 16px; font-size: 13px; color: var(--orange); }
+.scaffold-banner strong { color: var(--orange); }
+
+/* Review banner */
+.review-banner { padding: 12px 16px; background: var(--accent-soft); border: 1px solid var(--accent); border-radius: var(--radius-sm); margin-bottom: 16px; font-size: 13px; color: var(--accent); }
+
+/* Quiz loader */
+.quiz-loader { display: flex; flex-direction: column; align-items: center; padding: 56px 0; gap: 20px; }
+.quiz-loader-text { font-size: 14px; color: var(--text-dim); letter-spacing: 0.01em; }
+.quiz-loader-ring { width: 44px; height: 44px; position: relative; }
+.quiz-loader-ring div {
+  position: absolute; width: 36px; height: 36px; border-radius: 50%;
+  border: 3px solid transparent; border-top-color: var(--accent);
+  animation: quiz-spin 1s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+.quiz-loader-ring div:nth-child(1) { width: 36px; height: 36px; top: 4px; left: 4px; animation-delay: -0.3s; }
+.quiz-loader-ring div:nth-child(2) { width: 28px; height: 28px; top: 8px; left: 8px; border-top-color: var(--accent); opacity: 0.6; animation-delay: -0.15s; }
+.quiz-loader-ring div:nth-child(3) { width: 20px; height: 20px; top: 12px; left: 12px; border-top-color: var(--accent); opacity: 0.3; }
+@keyframes quiz-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
 @media (max-width: 600px) {
   header { padding: 12px 16px; }
   .view { padding: 16px; }

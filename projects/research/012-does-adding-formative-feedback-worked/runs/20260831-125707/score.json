@@ -1,0 +1,60 @@
+{
+  "run_id": "20260831-125707",
+  "value": 0.86,
+  "gates_passed": true,
+  "audited": true,
+  "gates": [
+    {
+      "name": "execution_completed",
+      "passed": true,
+      "detail": "All nodes ran to completion."
+    },
+    {
+      "name": "all_nodes_ran",
+      "passed": true,
+      "detail": "5 node(s) produced output."
+    },
+    {
+      "name": "result_measured",
+      "passed": true,
+      "detail": "evaluate reported a measurement."
+    },
+    {
+      "name": "metric_is_finite",
+      "passed": true,
+      "detail": "evaluate reported finite value(s)."
+    },
+    {
+      "name": "produced_output",
+      "passed": true,
+      "detail": "7 output value(s) recorded."
+    },
+    {
+      "name": "tool_use_verified",
+      "passed": true,
+      "detail": "Declared tool use matches the record."
+    }
+  ],
+  "pillars": {
+    "scientific_value": 0.78,
+    "method_fidelity": 0.85,
+    "implementation_quality": 0.95
+  },
+  "rationale": "Prediction HELD: mean_mastery_pct=99.08, predicted >= 99.0. Claim: Adaptive distributed flow with formative feedback over 12 passes reaches >=99.0% mean mastery Detector: differentiated_mastery from 006-does-adaptive-tightly-spaced/20260831-124859.",
+  "target_metric": "mean_mastery_pct",
+  "target_value": 99.0,
+  "target_direction": "maximize",
+  "observed_value": 99.08,
+  "audited_at": "2026-08-31T12:57:07+00:00",
+  "detector": "differentiated_mastery",
+  "template": "formative-feedback-differentiated",
+  "parent": "006-does-adaptive-tightly-spaced",
+  "prediction": {
+    "claim": "Adaptive distributed flow with formative feedback over 12 passes reaches >=99.0% mean mastery",
+    "metric": "mean_mastery_pct",
+    "op": ">=",
+    "value": 99.0,
+    "refuted_if": "mean_mastery_pct < 99.0"
+  },
+  "evidence_reviewed": false
+}

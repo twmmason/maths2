@@ -22,11 +22,35 @@
           <span id="streak-icon">🔥</span>
           <span id="streak-count">0</span>
         </div>
+        <div class="header-profile" id="header-profile" onclick="showProfileScreen()" title="Switch profile"></div>
       </div>
     </header>
 
+    <!-- Profile Screen -->
+    <main id="view-profile" class="view">
+      <div class="profile-screen">
+        <div class="profile-logo">📐</div>
+        <h2 class="profile-title">Maths Pathway</h2>
+        <p class="profile-sub">UK National Curriculum · Year 6 → KS3</p>
+
+        <div id="profile-existing" class="profile-section hidden">
+          <p class="profile-label">Continue as</p>
+          <div id="profile-list"></div>
+          <div class="profile-divider"><span>or</span></div>
+        </div>
+
+        <div class="profile-section">
+          <p class="profile-label">Create a new profile</p>
+          <div class="profile-form">
+            <input type="text" id="profile-name" class="profile-input" placeholder="Your name" maxlength="30" autocomplete="off">
+            <button id="profile-create-btn" class="btn" style="width:100%">Start Learning →</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <!-- Home / Pathway View -->
-    <main id="view-home" class="view active">
+    <main id="view-home" class="view">
       <div class="hero">
         <p class="hero-sub">UK National Curriculum</p>
         <h2 class="hero-title">Year 6 → Key Stage 3</h2>
@@ -35,6 +59,7 @@
         </div>
         <p class="progress-text"><span id="global-pct">0</span>% complete</p>
       </div>
+      <div id="study-next" class="study-next"></div>
       <div id="strand-list" class="strand-list"></div>
     </main>
 
@@ -68,7 +93,7 @@
           <div id="quiz-container"></div>
           <div id="quiz-result" class="hidden">
             <div id="quiz-score"></div>
-            <button id="retry-btn" class="btn">Try Again</button>
+            <div id="quiz-actions"></div>
           </div>
         </div>
       </div>
@@ -76,6 +101,8 @@
   </div>
 
   <script src="data.js"></script>
+  <script src="visuals.js"></script>
+  <script src="flow.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
