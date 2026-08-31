@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maths Pathway</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header id="header">
+      <div class="header-left">
+        <button id="back-btn" class="icon-btn hidden" aria-label="Back">←</button>
+        <h1 id="header-title">Maths Pathway</h1>
+      </div>
+      <div class="header-right">
+        <div class="xp-display">
+          <span id="xp-count">0</span> XP
+        </div>
+        <div class="streak-display">
+          <span id="streak-icon">🔥</span>
+          <span id="streak-count">0</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Home / Pathway View -->
+    <main id="view-home" class="view active">
+      <div class="hero">
+        <p class="hero-sub">UK National Curriculum</p>
+        <h2 class="hero-title">Year 6 → Key Stage 3</h2>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="global-progress"></div>
+        </div>
+        <p class="progress-text"><span id="global-pct">0</span>% complete</p>
+      </div>
+      <div id="strand-list" class="strand-list"></div>
+    </main>
+
+    <!-- Topic List View -->
+    <main id="view-strand" class="view">
+      <div class="strand-header">
+        <h2 id="strand-title"></h2>
+        <p id="strand-desc"></p>
+      </div>
+      <div id="topic-list" class="topic-list"></div>
+    </main>
+
+    <!-- Lesson View -->
+    <main id="view-lesson" class="view">
+      <div class="lesson-container">
+        <div class="lesson-tabs">
+          <button class="tab active" data-tab="learn">Learn</button>
+          <button class="tab" data-tab="examples">Examples</button>
+          <button class="tab" data-tab="practice">Practice</button>
+        </div>
+
+        <div id="tab-learn" class="tab-content active">
+          <div id="lesson-content"></div>
+        </div>
+
+        <div id="tab-examples" class="tab-content">
+          <div id="lesson-examples"></div>
+        </div>
+
+        <div id="tab-practice" class="tab-content">
+          <div id="quiz-container"></div>
+          <div id="quiz-result" class="hidden">
+            <div id="quiz-score"></div>
+            <button id="retry-btn" class="btn">Try Again</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
